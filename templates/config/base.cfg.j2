@@ -4,6 +4,8 @@
 
 ## OAuth2 Proxy Config File
 ## https://github.com/bitly/oauth2_proxy
+{{ macros.config_row(config, 'provider', '# provider = "google"', 0, true) }}
+{{ macros.config_row(config, 'github_org', '# github_org = ""', 0, true) }}
 
 ## <addr>:<port> to listen on for HTTP/HTTPS clients
 {{ macros.config_row(config, 'http_address', '# http_address = "127.0.0.1:4180"', 0, true) }}
